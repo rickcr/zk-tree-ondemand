@@ -11,9 +11,10 @@ The main differences in this project are...
 Bai's project was great but might confuse some a bit since it's illustrating its usage with traversing a File system, versus a typical
 type of crud call to just fetch your children from the DB.
 
-* Uses a service class that you pass to the PersonRODTreeNodeData object. You could set up your own project to not take this
-approach and instead use the service class instantiated directly in PersonRODTreeNodeData, but I use Spring (not illustrated in
-this example), I find it easier in this case to pass the service class since the PersonRODTreeNodeData objects are created
-via "new" , so rather than pull the bean from Spring's app context and use Prototype scope, I just pass the service class in.
+* Uses a service class that you pass to the PersonRODTreeNodeData object. 
+[ When setting up your own project feel free to instantiate the service class directly in PersonRODTreeNodeData and don't bother passing it 
+via the constructor, but since 'in real life' I use Spring (not illustrated in
+this project), I find it easier in this case to pass the service class directly vs having to look up the bean from Spring's app context 
+and use Prototype scope.
 
 
