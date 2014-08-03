@@ -1,0 +1,25 @@
+<window width="100%" height="100%" apply="org.zkoss.bind.BindComposer"
+		vflex="true"
+		viewModel="@id('vm') @init('net.learntechnology.vm.PersonVM')">
+
+	<vlayout height="100%">
+
+		<tree id="peopleTree" model="@load(vm.personsModel)" width="620px" vflex="1">
+			<treecols>
+				<treecol label="ID" width="200px"/>
+				<treecol label="Name" width="275px" />
+				<treecol label="Count" width="60px" />
+			</treecols>
+			<template name="model" var="item" >
+				<treeitem>
+					<treerow>
+						<treecell label="@load(item.data.person.id)" />
+						<treecell label="@load(item.data.person.name)" />
+						<treecell label="@load(item.data.count)" />
+					</treerow>
+				</treeitem>
+			</template>
+		</tree>
+
+	</vlayout>
+</window>
