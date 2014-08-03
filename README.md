@@ -5,10 +5,10 @@ ZK Tree Load on Demand, Render on Demand following Bai Ben's approach http://ben
 
 RODTreeModel, RODTreeNode, and RODTreeNodeData are core classes that you can reuse across ZK projects (see link above.)
 
-The main differences in this project are...
+The main differences in this project vs Bai's are: 
 
-* It illustrated using a typical type of domain value object you might be working with (in this case a simple "Person" object.
-Bai's project was great but might confuse some a bit since it's illustrating its usage with traversing a File system, versus a typical
+* It's illustrated using a typical type of domain value object you might be working with (in this case a simple "Person" object.)
+Bai's project is great but it could confuse some a bit since it's illustrating the usage with traversing a File system, versus a typical
 type of crud call to just fetch your children from the DB.
 
 * Uses a service class that you pass to the PersonRODTreeNodeData object. 
