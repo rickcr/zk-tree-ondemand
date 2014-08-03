@@ -17,4 +17,10 @@ via the constructor, but since 'in real life' I use Spring (not illustrated in
 this project), I find it easier in this case to pass the service class directly vs having to look up the bean from Spring's app context 
 and use Prototype scope.
 
+## Building/Deploying
+
+mvn clean install
+
+move the target/zk-tree-ondemand.war file to your app server of choice and then http://localhost:8080/zk-tree-ondemand/
+
 
